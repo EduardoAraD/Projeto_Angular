@@ -1,0 +1,17 @@
+.toolbar{
+    background-color: #0D47A1;
+    color: #FDFDFD;
+}
+
+.toolbar__img{
+    height: 46px;
+    width: 46px;
+    margin-left: 10px;
+    object-fit: contain;
+}
+  
+.toolbar__icon {
+    background-color: #0D47A1;
+    color: #FDFDFD;
+    border: none
+}

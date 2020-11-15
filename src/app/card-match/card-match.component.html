@@ -1,14 +1,14 @@
 <mat-card class="card">
     <mat-card-content class="card__content">
         <img class="card__img"
-            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu">
-        <h2 class="card__name">Botaagua FC</h2>
-        <p class="card__placar">2 - 1</p>
-        <h2 class="card__name">Ferroviário AC</h2>
+            src={{match.urlShieldHome}}
+            alt={{match.nameHome}}>
+        <h2 class="card__name">{{ match.nameHome }}</h2>
+        <p class="card__placar">{{ match.golsHome }} - {{ match.golsAway }}</p>
+        <h2 class="card__name">{{ match.nameAway }}</h2>
         <img class="card__img"
-            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu">
+            src={{match.urlShieldAway}}
+            alt={{match.nameAway}}>
     </mat-card-content>
 </mat-card>
 

@@ -38,4 +38,13 @@
         </div>
     </div>
     <button mat-raised-button color="primary" (click)="createMatch()">Salvar</button>
+
+    <h1>Exibindo Jogos</h1>
+    <div *ngIf="matchs.length === 0">
+        Não possui partidas
+    </div>
+    <div *ngFor="let match of matchs">
+        <spa-card-match></spa-card-match>
+    </div>
+
 </div>

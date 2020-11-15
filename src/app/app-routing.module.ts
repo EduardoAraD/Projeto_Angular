@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+import { CardMatchComponent } from './card-match/card-match.component'
 
 const routes: Routes = [
   // Home
@@ -9,6 +10,10 @@ const routes: Routes = [
     path:'',
     component: HomeComponent
   },
+  {
+    path: '',
+    component: CardMatchComponent
+  }
 ];
 
 @NgModule({

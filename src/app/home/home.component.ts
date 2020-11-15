@@ -30,9 +30,14 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
 
   createMatch(): void{
+    if(this.urlShieldHome === "") return;
+    if(this.urlShieldAway === "") return;
+    if(this.nameHome === "") return;
+    if(this.nameAway === "") return;
+
     const match = new Match();
     match.urlShieldHome = this.urlShieldHome;
-    match.urlShildAway = this.urlShieldAway;
+    match.urlShieldAway = this.urlShieldAway;
     match.nameHome = this.nameHome;
     match.nameAway = this.nameAway;
     match.golsHome = this.golsHome;

@@ -1,0 +1,39 @@
+.toolbar__home{
+    background-color: #0D47A1;
+    color: #FDFDFD;
+  }
+  
+  .toolbar__icon {
+    background-color: #0D47A1;
+    color: #FDFDFD;
+    border: none
+  }
+  
+  .content {
+    padding: 20px;
+    flex: 1;
+    background-color: #EDEDED;
+  }
+  
+  .content_form{
+    display: flex;
+  }
+  
+  .content_form_item{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  .content button{
+    margin: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .form-field {
+    width: 400px;
+  }
+  
+  .spacer {
+      flex: 1 1 auto;
+  }

@@ -1,1 +1,41 @@
-<p>home works!</p>
+<mat-toolbar class="toolbar__home">
+    <button mat-icon-button class="toolbar__icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Menu Botaagua FC</span>
+    <span class="spacer"></span>
+</mat-toolbar>
+<div class="content">
+    <h1>Inserindo Dados da partida</h1>
+    <div class="content_form">
+        <div class="content_form_item">
+            <mat-form-field class="form-field" appearence="fill">
+                <mat-label>Link do Escudo do Clube Mandante</mat-label>
+                <input matInput type="text" required [(ngModel)]="urlShieldHome">
+            </mat-form-field>
+            <mat-form-field class="form-field" appearence="fill">
+                <mat-label>Nome do Clube Mandante</mat-label>
+                <input matInput type="text" required [(ngModel)]="nameHome">
+            </mat-form-field>
+            <mat-form-field class="form-field" appearence="fill">
+                <mat-label>Número de gols do Clube Mandante</mat-label>
+                <input matInput type="number" required [(ngModel)]="golsHome">
+            </mat-form-field>
+        </div>
+        <div class="content_form_item">
+            <mat-form-field class="form-field" appearence="fill">
+                <mat-label>Link do Escudo do Clube Visitante</mat-label>
+                <input matInput type="text" required [(ngModel)]="urlShieldAway">
+            </mat-form-field>
+            <mat-form-field class="form-field" appearence="fill">
+                <mat-label>Nome do Clube Visitante</mat-label>
+                <input matInput type="text" required [(ngModel)]="nameAway">
+            </mat-form-field>
+            <mat-form-field class="form-field" appearence="fill">
+                <mat-label>Número de gols do Clube Visitante</mat-label>
+                <input matInput type="number" required [(ngModel)]="golsAway">
+            </mat-form-field>
+        </div>
+    </div>
+    <button mat-raised-button color="primary" (click)="createMatch()">Salvar</button>
+</div>

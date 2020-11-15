@@ -1,39 +1,37 @@
-.toolbar__home{
-    background-color: #0D47A1;
-    color: #FDFDFD;
-  }
+.content {
+  padding: 20px;
+  flex: 1;
+}
   
-  .toolbar__icon {
-    background-color: #0D47A1;
-    color: #FDFDFD;
-    border: none
-  }
+.content_form{
+  display: flex;
+}
   
-  .content {
-    padding: 20px;
-    flex: 1;
-    background-color: #EDEDED;
-  }
+.content_form_item{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
   
-  .content_form{
-    display: flex;
-  }
+.content button{
+  margin: 10px;
+  margin-bottom: 30px;
+}
   
-  .content_form_item{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-  }
+.form-field {
+  width: 400px;
+}
   
-  .content button{
-    margin: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .form-field {
-    width: 400px;
-  }
-  
-  .spacer {
-      flex: 1 1 auto;
-  }
+.spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep snack-bar-container.done_snackbar {
+  background-color: #28d662;
+  color: #FFFFFF;
+}
+
+::ng-deep snack-bar-container.error_snackbar {
+  background-color: #f44336;
+  color: #FFFFFF;
+}

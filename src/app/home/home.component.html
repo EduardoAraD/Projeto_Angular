@@ -1,10 +1,4 @@
-<mat-toolbar class="toolbar__home">
-    <button mat-icon-button class="toolbar__icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <span>Menu Botaagua FC</span>
-    <span class="spacer"></span>
-</mat-toolbar>
+<spa-header></spa-header>
 <div class="content">
     <h1>Inserindo Dados da partida</h1>
     <div class="content_form">
@@ -12,6 +6,7 @@
             <mat-form-field class="form-field" appearence="fill">
                 <mat-label>Link do Escudo do Clube Mandante</mat-label>
                 <input matInput type="text" required [(ngModel)]="urlShieldHome">
+                <mat-hint align="end">Escudo do Botaagua="botaagua.jpg"</mat-hint>
             </mat-form-field>
             <mat-form-field class="form-field" appearence="fill">
                 <mat-label>Nome do Clube Mandante</mat-label>
@@ -26,6 +21,7 @@
             <mat-form-field class="form-field" appearence="fill">
                 <mat-label>Link do Escudo do Clube Visitante</mat-label>
                 <input matInput type="text" required [(ngModel)]="urlShieldAway">
+                <mat-hint align="end">Escudo do Botaagua="botaagua.jpg"</mat-hint>
             </mat-form-field>
             <mat-form-field class="form-field" appearence="fill">
                 <mat-label>Nome do Clube Visitante</mat-label>

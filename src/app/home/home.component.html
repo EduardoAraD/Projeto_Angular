@@ -1,6 +1,6 @@
 <spa-header></spa-header>
 <div class="content">
-    <h1>Inserindo Dados da partida</h1>
+    <spa-title title="Inserindo dados da partida"></spa-title>
     <div class="content_form">
         <div class="content_form_item">
             <mat-form-field class="form-field" appearence="fill">
@@ -35,7 +35,7 @@
     </div>
     <button mat-raised-button color="primary" (click)="createMatch()">Salvar</button>
 
-    <h1>Exibindo Jogos</h1>
+    <spa-title title="Exibindo Jogos"></spa-title>
     <div *ngIf="matchs.length === 0">
         Não possui partidas
     </div>

@@ -1,0 +1,12 @@
+.title{
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #444;
+}
+
+.bar{
+    height: 2px;
+    background-color: cornflowerblue;
+    margin-bottom: 15px;
+}
